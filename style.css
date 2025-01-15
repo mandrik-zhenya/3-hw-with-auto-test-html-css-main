@@ -91,6 +91,7 @@ select {
 
 select:hover,
 .text-field:hover {
+    border: 1px solid #2965f1;
     /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
 }
 
@@ -114,6 +115,9 @@ select:hover,
 .frameworks-list,
 .books-list {
     /* 📍 Свойства flexbox для отступов между элементами в списках */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .frameworks-list {
@@ -125,10 +129,16 @@ select:hover,
 
 .skills-block {
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
 }
 
 .skills {
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .books-list {
@@ -143,7 +153,7 @@ select:hover,
 }
 
 form {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .text-field {
@@ -171,6 +181,8 @@ form {
 
 .btn:hover {
     /* 📍 Стили для кнопки при наведении курсора */
+    background: rgba(41, 101, 241, 0.9);
+    cursor: pointer;
 }
 
 .line {
@@ -192,6 +204,7 @@ th, td {
 footer {
     background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
+    text-align: center;
     /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
@@ -204,4 +217,5 @@ footer {
 
 .footer-link:hover {
     /* 📍 Стили для ссылки при наведении курсора */
+    text-decoration: underline;
 }
